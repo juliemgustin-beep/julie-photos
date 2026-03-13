@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#f4f4f2" />
+    <meta name="theme-color" content="#f7f2ea" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Julie's Photos" />
     <meta
       name="description"
-      content="A clean, mobile-first launcher for favorite Google Photos destinations."
+      content="A warm, mobile-first launcher for favorite Google Photos destinations."
     />
-    <title>Julie Photos</title>
+    <title>Julie's Photos</title>
     <link rel="icon" type="image/png" href="julie-photo-icon.png" />
     <link rel="apple-touch-icon" href="julie-photo-icon.png" />
     <link rel="stylesheet" href="styles.css" />
@@ -19,67 +19,91 @@
   <body>
     <main class="app-shell">
       <header class="app-header">
-        <p class="eyebrow">Google Photos Launcher</p>
+        <p class="eyebrow">Family Gallery</p>
         <h1>Julie's Photos</h1>
+        <p class="intro">A quick, beautiful way into the moments you open most.</p>
       </header>
 
-      <section class="tile-grid" aria-label="Photo destinations">
-        <a class="tile tile-main-gallery" href="https://photos.google.com" target="_blank" rel="noreferrer">
-          <span class="tile-label">Main Gallery</span>
+      <section class="editorial-grid" aria-label="Photo destinations">
+        <a class="card card-hero" href="https://photos.google.com" target="_blank" rel="noreferrer">
+          <span class="card-art" aria-hidden="true"></span>
+          <span class="card-scrim" aria-hidden="true"></span>
+          <span class="card-copy">
+            <span class="card-label">Gallery</span>
+          </span>
+        </a>
+
+        <a class="card card-stack-one" href="https://photos.google.com/albums" target="_blank" rel="noreferrer">
+          <span class="card-art" aria-hidden="true"></span>
+          <span class="card-scrim" aria-hidden="true"></span>
+          <span class="card-copy">
+            <span class="card-label">Albums</span>
+          </span>
         </a>
 
         <a
-          class="tile tile-gallery"
-          href="https://photos.google.com/albums"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span class="tile-label">All Albums</span>
-        </a>
-
-        <a
-          class="tile tile-favorites"
+          class="card card-stack-two"
           href="https://photos.google.com/share/AF1QipMpiJZ26LAGKOTudI0uETo--m3GEVLMiWV4m2ov32L-vTrnftsfJqa7fVpaVSdSaQ?key=RElfOWtKMDlFT0RnakdOb29NbElPWVZhaUxwUWRB"
           target="_blank"
           rel="noreferrer"
         >
-          <span class="tile-label">Layla &amp; Lucy</span>
+          <span class="card-art" aria-hidden="true"></span>
+          <span class="card-scrim" aria-hidden="true"></span>
+          <span class="card-copy">
+            <span class="card-label">Layla &amp; Lucy</span>
+          </span>
         </a>
 
         <a
-          class="tile tile-family"
+          class="card card-wide"
           href="https://photos.google.com/share/AF1QipNU4Au5re2Uitgr8J7t9PMbbJHqV3FogxZtY1MUBr3oNt5WSbA2PQ02AM_vB27vMA"
           target="_blank"
           rel="noreferrer"
         >
-          <span class="tile-label">Important Things</span>
+          <span class="card-art" aria-hidden="true"></span>
+          <span class="card-scrim" aria-hidden="true"></span>
+          <span class="card-copy">
+            <span class="card-label">Important</span>
+          </span>
         </a>
 
         <a
-          class="tile tile-trips"
-          href="https://photos.google.com/share/AF1QipMYxSyxfiRYs6bPHONLFeRNXqEjNZGX5D360gfltOLzVV-DuXlQhrxqul59DUZoiA?key=ZjF1U3dqZndfWVhTODF0UGZFYmY3UHJLY29DN1h3"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span class="tile-label">Banksy &amp; Crew</span>
-        </a>
-
-        <a
-          class="tile tile-kids"
+          class="card card-five"
           href="https://photos.google.com/share/AF1QipOAZkQmny672AihQ3URFCTq7PUxV_us5j6MreODLqrzoBTDQ8HDaOk5tn3mAkJeTQ?key=MUo1TWc3Qi1IUnA3c0pibGFqd1Jta3V5X3p2WUp3"
           target="_blank"
           rel="noreferrer"
         >
-          <span class="tile-label">#5</span>
+          <span class="card-art" aria-hidden="true"></span>
+          <span class="card-scrim" aria-hidden="true"></span>
+          <span class="card-copy">
+            <span class="card-label">#5</span>
+          </span>
         </a>
 
         <a
-          class="tile tile-reid"
+          class="card card-banksy"
+          href="https://photos.google.com/share/AF1QipMYxSyxfiRYs6bPHONLFeRNXqEjNZGX5D360gfltOLzVV-DuXlQhrxqul59DUZoiA?key=ZjF1U3dqZndfWVhTODF0UGZFYmY3UHJLY29DN1h3"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span class="card-art" aria-hidden="true"></span>
+          <span class="card-scrim" aria-hidden="true"></span>
+          <span class="card-copy">
+            <span class="card-label">Furballs</span>
+          </span>
+        </a>
+
+        <a
+          class="card card-family"
           href="https://photos.google.com/partner/AF1QipMM3Dm3631bxX63ZcMa56m0zahC"
           target="_blank"
           rel="noreferrer"
         >
-          <span class="tile-label">Reid's Photos</span>
+          <span class="card-art" aria-hidden="true"></span>
+          <span class="card-scrim" aria-hidden="true"></span>
+          <span class="card-copy">
+            <span class="card-label">Reid's Photos</span>
+          </span>
         </a>
       </section>
     </main>
