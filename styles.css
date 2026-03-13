@@ -88,7 +88,6 @@ h1 {
   min-height: 156px;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 4px;
   overflow: hidden;
   padding: 18px;
   border: 1px solid var(--surface-border);
@@ -140,11 +139,6 @@ h1 {
   max-width: 10ch;
 }
 
-.tile-meta {
-  font-size: 0.87rem;
-  color: rgba(23, 23, 23, 0.64);
-}
-
 .tile-gallery {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.56)),
@@ -173,6 +167,12 @@ h1 {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.58)),
     linear-gradient(145deg, #f2ece7, #ece6df 55%, #e7ecef);
+}
+
+.tile-reid {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.58)),
+    linear-gradient(150deg, #e8edf2, #e9e6ef 52%, #eef0ea);
 }
 
 .tile:focus-visible {
