@@ -145,6 +145,12 @@ h1 {
     linear-gradient(160deg, #f5f1ea, #ebeef2 55%, #e3e8ea);
 }
 
+.tile-main-gallery {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.56)),
+    linear-gradient(155deg, #f1eee8, #ececef 56%, #e5eaee);
+}
+
 .tile-favorites {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.58)),
@@ -219,9 +225,4 @@ h1 {
   .tile-label {
     font-size: 1rem;
   }
-}
-
-.tile-wide {
-  grid-column: 1 / -1;
-  min-height: 132px;
 }
