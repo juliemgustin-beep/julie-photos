@@ -1,13 +1,12 @@
 :root {
   color-scheme: light;
-  --bg: #f7f2ea;
-  --bg-wash: #fffdf9;
+  --bg: #f5efe7;
+  --bg-wash: #fcf8f2;
   --ink: #181513;
   --muted: #7b6d64;
-  --line: rgba(95, 72, 58, 0.08);
-  --shadow: 0 24px 48px rgba(86, 61, 45, 0.12);
-  --shadow-pressed: 0 14px 28px rgba(86, 61, 45, 0.16);
-  --radius-xl: 32px;
+  --line: rgba(95, 72, 58, 0.1);
+  --shadow: 0 18px 34px rgba(86, 61, 45, 0.09);
+  --shadow-pressed: 0 10px 18px rgba(86, 61, 45, 0.12);
   --radius-lg: 26px;
   --page-padding: clamp(18px, 5vw, 28px);
 }
@@ -18,9 +17,7 @@
 
 html {
   min-height: 100%;
-  background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.95), transparent 32%),
-    linear-gradient(180deg, #fcf8f2, var(--bg));
+  background: linear-gradient(180deg, #fbf7f1, var(--bg));
 }
 
 body {
@@ -29,10 +26,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue",
     sans-serif;
   color: var(--ink);
-  background:
-    radial-gradient(circle at 85% 10%, rgba(238, 224, 211, 0.45), transparent 24%),
-    radial-gradient(circle at 8% 70%, rgba(235, 229, 220, 0.45), transparent 22%),
-    linear-gradient(180deg, var(--bg-wash), var(--bg));
+  background: linear-gradient(180deg, var(--bg-wash), var(--bg));
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -97,69 +91,28 @@ h1 {
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
-  background: #d8cabb;
-  isolation: isolate;
+  background: #e5d8cb;
   transform: translateY(0) scale(1);
   transition:
     transform 180ms ease,
     box-shadow 180ms ease,
-    border-color 180ms ease;
-}
-
-.card-art,
-.card-scrim,
-.card::before,
-.card::after {
-  position: absolute;
-  inset: 0;
-  content: "";
-}
-
-.card-art {
-  z-index: -3;
-  transform: scale(1.03);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card::before {
-  z-index: -2;
-  background:
-    radial-gradient(circle at 22% 20%, rgba(255, 248, 240, 0.55), transparent 24%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(24, 16, 12, 0.08));
-  mix-blend-mode: screen;
-}
-
-.card::after {
-  inset: auto 12px 12px 12px;
-  height: 42%;
-  z-index: -1;
-  border-radius: 22px;
-  background: linear-gradient(180deg, rgba(14, 11, 10, 0), rgba(14, 11, 10, 0.68));
-}
-
-.card-scrim {
-  z-index: -1;
-  background:
-    linear-gradient(180deg, rgba(24, 16, 12, 0.02) 0%, rgba(24, 16, 12, 0.1) 48%, rgba(24, 16, 12, 0.48) 100%);
+    border-color 180ms ease,
+    background-color 180ms ease;
 }
 
 .card-copy {
-  position: relative;
-  z-index: 1;
-  padding: 16px 16px 18px;
+  padding: 18px 18px 20px;
 }
 
 .card-label {
   display: inline-block;
   max-width: 11ch;
-  color: #fff9f2;
-  font-size: 1.12rem;
-  font-weight: 600;
-  line-height: 1.06;
+  color: #221c19;
+  font-size: 1.14rem;
+  font-weight: 650;
+  line-height: 1.08;
   letter-spacing: -0.03em;
   text-wrap: balance;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.26);
 }
 
 .card-hero {
@@ -188,56 +141,32 @@ h1 {
   min-height: 176px;
 }
 
-/* Swap any of these gradient recipes for your own photos later if you want true album thumbnails. */
-.card-hero .card-art {
-  background-image:
-    radial-gradient(circle at 74% 24%, rgba(255, 219, 194, 0.95), transparent 18%),
-    radial-gradient(circle at 28% 34%, rgba(255, 244, 229, 0.95), transparent 24%),
-    linear-gradient(140deg, rgba(122, 80, 53, 0.2), rgba(122, 80, 53, 0)),
-    linear-gradient(135deg, #dfa885 0%, #f0c8a6 32%, #c98c73 62%, #7c4f4a 100%);
+.card-hero {
+  background: #d8c6b6;
 }
 
-.card-stack-one .card-art {
-  background-image:
-    radial-gradient(circle at 26% 24%, rgba(255, 255, 255, 0.85), transparent 16%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0)),
-    linear-gradient(135deg, #dad0c2 0%, #cbbdaa 45%, #b39d87 100%);
+.card-stack-one {
+  background: #ddd0c2;
 }
 
-.card-stack-two .card-art {
-  background-image:
-    radial-gradient(circle at 68% 30%, rgba(255, 246, 244, 0.92), transparent 20%),
-    radial-gradient(circle at 30% 74%, rgba(255, 214, 206, 0.5), transparent 26%),
-    linear-gradient(135deg, #f1c2bc 0%, #dca0a0 42%, #a8737f 100%);
+.card-stack-two {
+  background: #dcc8c6;
 }
 
-.card-wide .card-art {
-  background-image:
-    radial-gradient(circle at 18% 28%, rgba(255, 241, 224, 0.72), transparent 16%),
-    radial-gradient(circle at 82% 28%, rgba(255, 229, 216, 0.58), transparent 20%),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0)),
-    linear-gradient(120deg, #b58674 0%, #d2a48d 28%, #d8c2ab 58%, #8c6f68 100%);
+.card-wide {
+  background: #d2c8bb;
 }
 
-.card-five .card-art {
-  background-image:
-    radial-gradient(circle at 72% 24%, rgba(255, 248, 238, 0.9), transparent 18%),
-    radial-gradient(circle at 34% 68%, rgba(203, 164, 145, 0.38), transparent 24%),
-    linear-gradient(135deg, #d8b4a0 0%, #c39079 46%, #8e5e53 100%);
+.card-five {
+  background: #d4c4b8;
 }
 
-.card-banksy .card-art {
-  background-image:
-    radial-gradient(circle at 24% 26%, rgba(255, 244, 225, 0.88), transparent 16%),
-    radial-gradient(circle at 76% 70%, rgba(255, 208, 181, 0.44), transparent 20%),
-    linear-gradient(135deg, #c5aa84 0%, #9d7f58 40%, #6f5742 100%);
+.card-banksy {
+  background: #c6c8bb;
 }
 
-.card-family .card-art {
-  background-image:
-    radial-gradient(circle at 70% 26%, rgba(255, 255, 255, 0.88), transparent 18%),
-    radial-gradient(circle at 34% 74%, rgba(211, 225, 216, 0.5), transparent 24%),
-    linear-gradient(135deg, #b8cec5 0%, #90afa4 40%, #667e78 100%);
+.card-family {
+  background: #c8beb4;
 }
 
 .card:focus-visible {
@@ -256,7 +185,7 @@ h1 {
 @media (hover: hover) {
   .card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 30px 56px rgba(86, 61, 45, 0.14);
+    box-shadow: 0 24px 40px rgba(86, 61, 45, 0.12);
   }
 }
 
