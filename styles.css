@@ -117,13 +117,9 @@ h1 {
 
 .card-art {
   z-index: -3;
-  background-image:
-    linear-gradient(140deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0)),
-    url("julie-photo-icon.png");
+  transform: scale(1.03);
   background-size: cover;
-  background-position: center;
-  transform: scale(1.08);
-  filter: saturate(0.9) contrast(0.94) brightness(0.92) blur(0px);
+  background-repeat: no-repeat;
 }
 
 .card::before {
@@ -192,39 +188,56 @@ h1 {
   min-height: 176px;
 }
 
+/* Swap any of these gradient recipes for your own photos later if you want true album thumbnails. */
 .card-hero .card-art {
-  background-position: center center;
-  filter: saturate(1) contrast(0.96) brightness(0.86);
+  background-image:
+    radial-gradient(circle at 74% 24%, rgba(255, 219, 194, 0.95), transparent 18%),
+    radial-gradient(circle at 28% 34%, rgba(255, 244, 229, 0.95), transparent 24%),
+    linear-gradient(140deg, rgba(122, 80, 53, 0.2), rgba(122, 80, 53, 0)),
+    linear-gradient(135deg, #dfa885 0%, #f0c8a6 32%, #c98c73 62%, #7c4f4a 100%);
 }
 
 .card-stack-one .card-art {
-  background-position: 20% center;
-  filter: hue-rotate(-10deg) saturate(0.78) brightness(0.92);
+  background-image:
+    radial-gradient(circle at 26% 24%, rgba(255, 255, 255, 0.85), transparent 16%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0)),
+    linear-gradient(135deg, #dad0c2 0%, #cbbdaa 45%, #b39d87 100%);
 }
 
 .card-stack-two .card-art {
-  background-position: 78% center;
-  filter: hue-rotate(12deg) saturate(0.96) brightness(0.9);
+  background-image:
+    radial-gradient(circle at 68% 30%, rgba(255, 246, 244, 0.92), transparent 20%),
+    radial-gradient(circle at 30% 74%, rgba(255, 214, 206, 0.5), transparent 26%),
+    linear-gradient(135deg, #f1c2bc 0%, #dca0a0 42%, #a8737f 100%);
 }
 
 .card-wide .card-art {
-  background-position: center 35%;
-  filter: sepia(0.12) saturate(0.9) brightness(0.82);
-}
-
-.card-banksy .card-art {
-  background-position: 68% center;
-  filter: hue-rotate(24deg) saturate(0.9) brightness(0.8);
+  background-image:
+    radial-gradient(circle at 18% 28%, rgba(255, 241, 224, 0.72), transparent 16%),
+    radial-gradient(circle at 82% 28%, rgba(255, 229, 216, 0.58), transparent 20%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0)),
+    linear-gradient(120deg, #b58674 0%, #d2a48d 28%, #d8c2ab 58%, #8c6f68 100%);
 }
 
 .card-five .card-art {
-  background-position: 52% 28%;
-  filter: sepia(0.2) hue-rotate(-8deg) saturate(0.82) brightness(0.84);
+  background-image:
+    radial-gradient(circle at 72% 24%, rgba(255, 248, 238, 0.9), transparent 18%),
+    radial-gradient(circle at 34% 68%, rgba(203, 164, 145, 0.38), transparent 24%),
+    linear-gradient(135deg, #d8b4a0 0%, #c39079 46%, #8e5e53 100%);
+}
+
+.card-banksy .card-art {
+  background-image:
+    radial-gradient(circle at 24% 26%, rgba(255, 244, 225, 0.88), transparent 16%),
+    radial-gradient(circle at 76% 70%, rgba(255, 208, 181, 0.44), transparent 20%),
+    linear-gradient(135deg, #c5aa84 0%, #9d7f58 40%, #6f5742 100%);
 }
 
 .card-family .card-art {
-  background-position: 35% center;
-  filter: hue-rotate(-22deg) saturate(0.85) brightness(0.88);
+  background-image:
+    radial-gradient(circle at 70% 26%, rgba(255, 255, 255, 0.88), transparent 18%),
+    radial-gradient(circle at 34% 74%, rgba(211, 225, 216, 0.5), transparent 24%),
+    linear-gradient(135deg, #b8cec5 0%, #90afa4 40%, #667e78 100%);
 }
 
 .card:focus-visible {
